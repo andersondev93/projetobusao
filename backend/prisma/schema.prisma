@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:agosto0708@localhost:5432/busao?schema=public"
+}
+
+model Usuario {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  email     String   @unique
+  senha     String
+  tipo      String // 'admin' ou 'voluntario'
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Linha {
+  id              Int       @id @default(autoincrement())
+  numero          String
+  nome            String
+  sentido         String
+  cor             String?
+  passagem        String?
+  horarioOperacao String?
+  horarios        Horario[]
+  pontos          Ponto[]
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Horario {
+  id         Int      @id @default(autoincrement())
+  hora       String
+  diasSemana String? // "seg-sex", "sab", "dom", ou personalizado
+  linha      Linha    @relation(fields: [linhaId], references: [id])
+  linhaId    Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Ponto {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  endereco  String
+  latitude  Float
+  longitude Float
+  linhas    Linha[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

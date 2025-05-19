@@ -1,0 +1,197 @@
+[
+    {
+        "id": 1,
+        "nome": "Terminal da Praia Grande",
+        "endereco": "Av. Senador Vitorino Freire, Centro",
+        "coordenadas": {
+            "latitude": -2.5276,
+            "longitude": -44.3057
+        },
+        "linhas": [
+            101,
+            310,
+            505
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": true,
+            "iluminacao": true,
+            "painel": true
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Terminal da Cohama",
+        "endereco": "Av. Jerônimo de Albuquerque, Cohama",
+        "coordenadas": {
+            "latitude": -2.5306,
+            "longitude": -44.2421
+        },
+        "linhas": [
+            207,
+            408
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": true,
+            "iluminacao": true,
+            "painel": true
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Terminal Cohab",
+        "endereco": "Av. Principal, Cohab",
+        "coordenadas": {
+            "latitude": -2.5549,
+            "longitude": -44.2120
+        },
+        "linhas": [
+            310,
+            408
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": true,
+            "iluminacao": true,
+            "painel": true
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Ponto Deodoro",
+        "endereco": "Rua Grande, Centro",
+        "coordenadas": {
+            "latitude": -2.5329,
+            "longitude": -44.3003
+        },
+        "linhas": [
+            101,
+            505
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": false,
+            "iluminacao": true,
+            "painel": false
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Ponto São Francisco",
+        "endereco": "Av. Litorânea, São Francisco",
+        "coordenadas": {
+            "latitude": -2.4927,
+            "longitude": -44.2543
+        },
+        "linhas": [
+            101
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": false,
+            "iluminacao": true,
+            "painel": false
+        }
+    },
+    {
+        "id": 6,
+        "nome": "Ponto Calhau",
+        "endereco": "Av. dos Holandeses, Calhau",
+        "coordenadas": {
+            "latitude": -2.5045,
+            "longitude": -44.2637
+        },
+        "linhas": [
+            605
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": true,
+            "iluminacao": true,
+            "painel": false
+        }
+    },
+    {
+        "id": 7,
+        "nome": "Ponto Cohatrac",
+        "endereco": "Av. Principal, Cohatrac",
+        "coordenadas": {
+            "latitude": -2.5624,
+            "longitude": -44.2158
+        },
+        "linhas": [
+            505
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": false,
+            "acessibilidade": false,
+            "iluminacao": false,
+            "painel": false
+        }
+    },
+    {
+        "id": 8,
+        "nome": "Ponto Turu",
+        "endereco": "Av. São Luis Rei de França, Turu",
+        "coordenadas": {
+            "latitude": -2.5123,
+            "longitude": -44.2311
+        },
+        "linhas": [
+            605
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": true,
+            "acessibilidade": false,
+            "iluminacao": true,
+            "painel": false
+        }
+    },
+    {
+        "id": 9,
+        "nome": "Ponto Cidade Operária",
+        "endereco": "Av. Principal, Cidade Operária",
+        "coordenadas": {
+            "latitude": -2.5574,
+            "longitude": -44.1953
+        },
+        "linhas": [
+            207
+        ],
+        "estrutura": {
+            "cobertura": true,
+            "assento": false,
+            "acessibilidade": false,
+            "iluminacao": false,
+            "painel": false
+        }
+    },
+    {
+        "id": 10,
+        "nome": "Ponto Jardim América",
+        "endereco": "Av. Principal, Jardim América",
+        "coordenadas": {
+            "latitude": -2.5462,
+            "longitude": -44.2264
+        },
+        "linhas": [
+            408
+        ],
+        "estrutura": {
+            "cobertura": false,
+            "assento": false,
+            "acessibilidade": false,
+            "iluminacao": true,
+            "painel": false
+        }
+    }
+]

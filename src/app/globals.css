@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+/* Adicione aqui estilos globais personalizados, se necessário */
+
+/* Estilos padrão para elementos HTML usando Tailwind */
+body {
+  @apply bg-[#FAFAFA] text-[#333333] font-sans;
+}
+
+/* Estilização de componentes personalizados que podem ser reutilizados */
+.card {
+  @apply bg-white rounded-xl shadow-md overflow-hidden border border-[#E0E0E0];
+}
+
+.container-custom {
+  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Classes de botões personalizados usando as cores configuradas no tailwind.config.js */
+.btn-primary {
+  @apply bg-primary text-white font-medium py-2 px-4 rounded-md hover:bg-primary-dark transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white font-medium py-2 px-4 rounded-md hover:bg-secondary-dark transition-colors;
+}
+
+.btn-outline {
+  @apply border border-primary text-primary font-medium py-2 px-4 rounded-md hover:bg-primary/5 transition-colors;
+}

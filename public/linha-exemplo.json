@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "numero": "101",
+    "nome": "São Francisco / Centro",
+    "passagem": "R$ 4,00",
+    "sentido": "Centro",
+    "horario": "05:00-23:30",
+    "intervalo": "15min",
+    "pontos": 32,
+    "cor": "blue"
+  },
+  {
+    "id": 2,
+    "numero": "207",
+    "nome": "Cidade Operária / Terminal Cohama",
+    "passagem": "R$ 4,00",
+    "sentido": "Terminal",
+    "horario": "04:45-23:00",
+    "intervalo": "20min",
+    "pontos": 28,
+    "cor": "green"
+  },
+  {
+    "id": 3,
+    "numero": "310",
+    "nome": "Cohab / Praia Grande",
+    "passagem": "R$ 4,00",
+    "sentido": "Centro Histórico",
+    "horario": "05:30-22:45",
+    "intervalo": "25min",
+    "pontos": 24,
+    "cor": "red"
+  },
+  {
+    "id": 4,
+    "numero": "408",
+    "nome": "Jardim América / Terminal Cohab",
+    "passagem": "R$ 4,00",
+    "sentido": "Terminal",
+    "horario": "05:15-23:15",
+    "intervalo": "18min",
+    "pontos": 26,
+    "cor": "purple"
+  },
+  {
+    "id": 5,
+    "numero": "505",
+    "nome": "Cohatrac / Deodoro",
+    "passagem": "R$ 4,00",
+    "sentido": "Centro",
+    "horario": "04:30-23:30",
+    "intervalo": "12min",
+    "pontos": 30,
+    "cor": "orange"
+  },
+  {
+    "id": 6,
+    "numero": "605",
+    "nome": "Turu / Calhau",
+    "passagem": "R$ 4,00",
+    "sentido": "Calhau",
+    "horario": "05:45-22:30",
+    "intervalo": "22min",
+    "pontos": 20,
+    "cor": "teal"
+  }
+]
