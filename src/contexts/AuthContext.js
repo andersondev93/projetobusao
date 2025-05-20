@@ -22,8 +22,16 @@ const MOCK_USER = {
     tipo: 'admin'
 };
 
+// Detecta ambiente de produção usando hostname
+const isProduction = typeof window !== 'undefined' &&
+    window.location.hostname !== 'localhost' &&
+    window.location.hostname !== '127.0.0.1';
+
 // URL base da API
-const API_URL = 'http://localhost:3333/api';
+const API_URL = isProduction
+    ? 'https://projetobusao-backend.vercel.app/api'
+    : 'http://localhost:3333/api';
+
 // Flag para definir se deve usar mock ou backend real
 const USE_MOCK = false;
 
@@ -96,8 +104,8 @@ export function AuthProvider({ children }) {
                 // Tenta fazer login no backend real
                 console.log('Tentando login com:', { email, senha });
                 try {
-                    console.log('Enviando requisição para:', `${API_URL}/auth/login`);
-                    const response = await axios.post(`${API_URL}/auth/login`, {
+                    console.log('Enviando requisição para API autenticada');
+                    const response = await api.post('/auth/login', {
                         email,
                         senha
                     });
