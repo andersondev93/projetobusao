@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "vercel-build": "npx prisma migrate deploy",
+    "vercel-build": "prisma generate",
     "start": "node src/server.js",
     "init-db": "node src/scripts/initDB.js",
     "migrate": "prisma migrate dev",
