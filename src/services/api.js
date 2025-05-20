@@ -1,8 +1,17 @@
 import axios from 'axios';
 
-const API_URL = process.env.NODE_ENV === 'production'
+// Detecta se estamos em produção verificando o hostname da janela
+let isProduction = false;
+if (typeof window !== 'undefined') {
+    isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+}
+
+const API_URL = isProduction
     ? 'https://projetobusao-backend.vercel.app/api'
     : 'http://localhost:3333/api';
+
+console.log('Ambiente detectado:', isProduction ? 'Produção' : 'Desenvolvimento');
+console.log('Usando API URL:', API_URL);
 
 const api = axios.create({
     baseURL: API_URL,
