@@ -87,8 +87,7 @@ export default function SobrePage() {
                         { nome: "Carlos Eduardo", cargo: "Desenvolvedor front-end", foto: "https://via.placeholder.com/150" },
                         { nome: "Iago Lima", cargo: "Desenvolvedor full-stack", foto: "https://via.placeholder.com/150" },
                         { nome: "Anderson Gonçalves", cargo: "Desenvolvedor full-stack", foto: "https://via.placeholder.com/150" },
-                        { nome: "Vitor Emanuel", cargo: "Desenvolvedor back-end", foto: "https://via.placeholder.com/150" },
-
+                
                     ].map((membro, index) => (
                         <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md">
                             <div className="w-full h-40 bg-gray-200 flex items-center justify-center">
