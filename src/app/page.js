@@ -126,7 +126,7 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Horários em Tempo Real</h3>
+            <h3 className="text-xl font-semibold mb-2">Horários de Partida</h3>
             <p className="text-[#666666]">Consulte os horários atualizados dos ônibus para planejar sua viagem com precisão.</p>
           </div>
 

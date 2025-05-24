@@ -71,8 +71,8 @@ export default function ContatoPage() {
 
                             {mensagemEnvio && (
                                 <div className={`p-4 mb-6 rounded-lg ${mensagemEnvio.tipo === "sucesso"
-                                        ? "bg-green-100 text-green-800"
-                                        : "bg-red-100 text-red-800"
+                                    ? "bg-green-100 text-green-800"
+                                    : "bg-red-100 text-red-800"
                                     }`}>
                                     {mensagemEnvio.texto}
                                 </div>
@@ -148,8 +148,8 @@ export default function ContatoPage() {
                                     type="submit"
                                     disabled={enviando}
                                     className={`w-full sm:w-auto px-6 py-3 font-medium rounded-lg ${enviando
-                                            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                                            : "bg-primary hover:bg-primary-dark text-white transition-colors"
+                                        ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                                        : "bg-primary hover:bg-primary-dark text-white transition-colors"
                                         }`}
                                 >
                                     {enviando ? (
@@ -229,13 +229,6 @@ export default function ContatoPage() {
                     </div>
                 </div>
 
-                {/* Mapa */}
-                <div className="mb-8">
-                    <h2 className="text-2xl font-bold text-primary-dark mb-4">Nossa Localização</h2>
-                    <div className="bg-gray-200 rounded-xl h-80 flex items-center justify-center">
-                        <p className="text-gray-500">Mapa será carregado em breve</p>
-                    </div>
-                </div>
             </main>
 
             <Footer />
